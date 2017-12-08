@@ -1,32 +1,3 @@
-// switch (s) {
-// 	case "+":
-// 		y = y + x;
-// 		break;
-// 	case "-":
-// 		y = y - x;
-// 		break;
-// 	case "*":
-// 		y = y * x;
-// 		break;
-// 	case "/":
-// 		y = y / x;
-// 		break;
-// 	case "Abs":
-// 	case "abs":
-// 	case "ABS":
-// 		y = Math.abs(y);
-// 		break;
-// 	case "Mod":
-// 	case "MOD":
-// 		y = y % x;
-// 	default:
-// 		y = x;
-// }
-
-
-
-
-// 1 завдання
 
 function Task1() {
 	var y = 2; 
@@ -76,7 +47,7 @@ function Task2() {
 
 
 
-function Task3(argument) {
+function Task3() {
 var s0 = 10000;
 var p = 30;
 var m = ((p/12)/100);
@@ -102,19 +73,20 @@ function Task4() {
  var p = 30;
  var m = ((p/12)/100);
  var f = 2;
+ var q;
 
 	console.log("=============================================");
 	if (f == 1) { 
-		p = s0 * m;
-		for (i= 1; s0 < sn; i++) {
-			s0 += p;
+		q = s0 * m;
+		for (i = 1; s0 < sn; i++) {
+			s0 += q;
 			console.log("Месяц " + i +" : " + s0);
 		}
 	} 
 	else if (f == 2) {
 		for (i = 1; s0 < sn; i++) {
-			p = s0 * m;
-			s0 += p;
+			q = s0 * m;
+			s0 += q;
 			console.log("Месяц " + i +" : " + Math.round(s0 * 100) / 100);
 		} 
 	}
